@@ -57,6 +57,59 @@
       
     </section>
 
+    <!-- MODAL -->
+    <a href="#">
+        <button class="mail__button click" onclick="toggleModal()">
+          <i class="fa-solid fa-envelope"></i>
+        </button>
+     </a>
+     <div class="modal">
+        <div class="modal__half modal__about">
+            <h3 class="modal__title madal__title--about"> 
+                Congratulations!
+            </h3>
+            <h3 class="modal__sub-title modal__sub-title--about">Thank you for reaching out!</h3>
+            <p class="modal__para">
+                We would love to get to know you as you start this <b class="green">journey</b>.
+                You are<b class="green"> valued </b>here,
+                we'll talk to you soon.
+            </p>
+        </div>
+        <div class="modal__half modal__contact">
+<i class="fa fa-times modal__exit click" onclick="toggleModal()"></i>
+
+            <h3 class="modal__title modal__title--contact">
+                Lets have a chat.
+            </h3>
+            <h3 class="modal__sub-title modal__sub-title--contact">
+                I'd love to hear from <b class="green">you</b>
+            </h3>
+            <form id="contact__form" onsubmit="contact(event)">
+                <div class="form__item">
+                    <label class="form__item--label" >Name</label>
+                    <input type="text" name="user_name" class="input" required></input>
+                </div>
+                <div class="form__item">
+                    <label class="form__item--label">Email</label>
+                    <input type="email" name="user_email" class="input" required></input>
+                </div>
+                <div class="form__item">
+                    <label class="form__item--label" >Message</label>
+                    <textarea type="text" name="message" class="input" required></textarea>
+                </div>
+            <button id="contact__submit" class="form__submit">
+                Send
+            </button>    
+            </form>
+            <div class="modal__overlay modal__overlay--loading">
+                <i class="fas fa-spinner"></i>
+            </div>
+            <div class="modal__overlay modal__overlay--success">
+                Thanks for the message! I am looking forward to speaking with you soon.
+            </div>
+            
+        </div>
+      </div>
     <!--about us-->
 
     <section class="about">
@@ -64,11 +117,11 @@
             <span class="orange">Introducing</span>
         </h1>
         <h1 class="about__h1-2">Fourth Trimester Services</h1>
-        <p> Your <span class="orange">trusted</span> partner in postpartum care
+        <p class="para__1"> Your <span class="orange">trusted</span> partner in postpartum care
             in Northeast Ohio.
 <div class="row hidden">
     <div class="about__col">
-        <h3>Our Joy</h3>
+        <h3 class="white">Our Joy</h3>
         <p>We specialize in providing comprehensive support
             and guidance to mothers and families during the crucial postpartum
             period. With our experienced team of birth/postpartum workers, we
@@ -76,7 +129,7 @@
             parenthood.</p>
     </div>
     <div class="about__col">
-        <h3>Our Mission</h3>
+        <h3 class="white">Our Mission</h3>
         <p>We specialize in providing comprehensive support
             and guidance to mothers and families during the crucial postpartum
             period. With our experienced team of birth/postpartum workers, we
@@ -84,7 +137,7 @@
             parenthood.</p>
     </div>
     <div class="about__col">
-        <h3>Our Vision</h3>
+        <h3 class="white">Our Vision</h3>
         <p>We specialize in providing comprehensive support
             and guidance to mothers and families during the crucial postpartum
             period. With our experienced team of birth/postpartum workers, we
@@ -165,7 +218,7 @@
     <!--OUR GOAL-->
 <section class="goal"> 
      <h1>Our Goal</h1>
-        <p>The Fourth Trimester Project is a groundbreaking initiative based in the
+        <p class="para__1">The Fourth Trimester Project is a groundbreaking initiative based in the
              State of Ohio, serving the cities of Akron and Canton. Our project aims to 
              improve maternal and infant health outcomes by addressing the critical
               yet often overlooked postpartum period. We envision the establishment 
@@ -191,8 +244,8 @@
         <div class="row">
             <div class="services__col">
                 <img src="assets/chris-anderson-RcgiSN482VI-unsplash.jpg">
-                <h3>Postpartum Care</h3>
-                <p>Our postpartum care services provides new mothers with 
+                <h3 >Postpartum Care</h3>
+                <p class="para__1">Our postpartum care services provides new mothers with 
                     personalized support, guidance, 
                     and care during the crucial post-delivery period.
                      From breastfeeding assistance to emotional support,
@@ -201,8 +254,8 @@
             </div>
             <div class="services__col">
                 <img src="assets/louis-hansel-PHasEX5wZYc-unsplash.jpg">
-                <h3>Meals</h3>
-                <p>We've got you covered! Our postpartum families can savor
+                <h3 >Meals</h3>
+                <p class="para__1">We've got you covered! Our postpartum families can savor
                      delicious, chef-prepared meals that are customized to
                       meet their dietary requirements, with plenty of
                      dairy-free, gluten-free, and other options available..</p>
@@ -210,7 +263,7 @@
             <div class="services__col">
                 <img src="https://lansinoh.com/cdn/shop/articles/the-language-of-breastfeeding-glossary.jpg?v=1677465655">
                 <h3>Lactation Support</h3>
-                <p>With our services, you will receive You can count on us for
+                <p class="para__1">With our services, you will receive You can count on us for
                      top-notch lactation support! Our friendly specialist is
                       here to help you overcome any
                      breastfeeding obstacles and provide you with all the guidance
@@ -227,16 +280,16 @@
 
 <section class="testimonials">
 <h1>What Our Clients Say</h1>
-<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+<p class="black">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
      Voluptatibus, temporibus?</p>
      <div class="row">
         <div class="testimonials__col hidden">
             <img src="assets/rebekah-vos-GoabH6sEXek-unsplash.jpg" alt="">
             <div>
-                <p>
+                <p class="white">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, praesentium reiciendis! Quam saepe obcaecati iusto sequi maxime commodi doloremque possimus explicabo fuga expedita dolores, magni repudiandae vitae neque ad adipisci! Hic ullam autem asperiores id, natus officia culpa optio laborum.
                 </p>
-                <h3>- Jessica White</h3>
+                <h3 class="white">- Jessica White</h3>
                 <i class="fa-solid fa-star"></i>
                 <i class="fa-solid fa-star"></i>
                 <i class="fa-solid fa-star"></i>
@@ -248,10 +301,10 @@
         <div class="testimonials__col hidden">
             <img src="assets/fourth-tri-img3.jpg" alt="">
             <div>
-                <p>
+                <p class="white">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, praesentium reiciendis! Quam saepe obcaecati iusto sequi maxime commodi doloremque possimus explicabo fuga expedita dolores, magni repudiandae vitae neque ad adipisci! Hic ullam autem asperiores id, natus officia culpa optio laborum.
                 </p>
-                <h3>- Jane Doe</h3>
+                <h3 class="white">- Jane Doe</h3>
                 <i class="fa-solid fa-star"></i>
                 <i class="fa-solid fa-star"></i>
                 <i class="fa-solid fa-star"></i>
@@ -278,14 +331,16 @@ The Importance of <br> Postpartum Support
            during this period is crucial for the well-being
             of both mothers and infants. Our project aims to focus on four areas: Enhancing maternal health, fostering infant health, providing emotional well-being support, and offering
          education that empowers mothers, and their families</p>
-         <a href="" class="btn">CONTACT US</a>
+         <a href="#" class="btn" onclick="toggleModal()">
+            CONTACT US
+        </a>
 </section>
 
 <!--Footer-->
 
 <section class="footer">
     <h4>About Us</h4>
-    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cum iure voluptatibus labore
+    <p class="black">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cum iure voluptatibus labore
          <br>repellat sed quos sequi enim mollitia quidem numquam.</p>
          <div class="icon">
             <i class="fa fa-facebook"></i>
@@ -293,7 +348,7 @@ The Importance of <br> Postpartum Support
             <i class="fa fa-instagram"></i>
             <i class="fa fa-linkedin"></i>
          </div>
-         <p>Copywright © 2024</p>
+         <p class="black">Copywright © 2024</p>
 </section>
 </body>
 </html>
