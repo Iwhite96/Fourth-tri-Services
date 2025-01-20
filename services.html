@@ -21,11 +21,12 @@
             <div class="nav__links" id="navLinks">
                 <i class="fa-solid fa-times" onclick="hideMenu()"></i>
                 <ul>
-                    <li><a href="">Home</a></li>
-                    <li><a href="">About Us</a></li>
-                    <li><a href="">Services</a></li>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="#about--sec">About Us</a></li>
+                    <li><a href="services.html">Services</a></li>
                     <li><a href="">Blog</a></li>
-                    <li><a href="">Team</a></li>
+                    <li><a href="member.html">MemberShip</a></li>
+                    <li><a href="team.html">Team</a></li>
                     <li><a href="">Log In</a></li>
                 </ul>
             </div>
@@ -36,6 +37,59 @@
       
     </section>
  <!-- Services content -->
+
+  <!-- <a href="#">
+        <button class="mail__button click" onclick="toggleModal()">
+          <i class="fa-solid fa-envelope"></i>
+        </button>
+     </a> -->
+     <div class="modal">
+        <div class="modal__half modal__about">
+            <h3 class="modal__title madal__title--about"> 
+                Congratulations!
+            </h3>
+            <h3 class="modal__sub-title modal__sub-title--about">Thank you for reaching out!</h3>
+            <p class="modal__para">
+                We currently offer a wide <b class="green"> variety </b> of services, with even more in the way.
+                Were here for any questions you may have! We can't wait to hear from you,
+                talk to you soon.
+            </p>
+        </div>
+        <div class="modal__half modal__contact">
+<i class="fa fa-times modal__exit click" onclick="toggleModal()"></i>
+
+            <h3 class="modal__title modal__title--contact">
+                Lets have a chat.
+            </h3>
+            <h3 class="modal__sub-title modal__sub-title--contact">
+                I'd love to hear from <b class="green">you</b>
+            </h3>
+            <form id="contact__form" onsubmit="contact(event)">
+                <div class="form__item">
+                    <label class="form__item--label" >Name</label>
+                    <input type="text" name="user_name" class="input" required></input>
+                </div>
+                <div class="form__item">
+                    <label class="form__item--label">Email</label>
+                    <input type="email" name="user_email" class="input" required></input>
+                </div>
+                <div class="form__item">
+                    <label class="form__item--label" >Message</label>
+                    <textarea type="text" name="message" class="input" required></textarea>
+                </div>
+            <button id="contact__submit" class="form__submit">
+                Send
+            </button>    
+            </form>
+            <div class="modal__overlay modal__overlay--loading">
+                <i class="fas fa-spinner"></i>
+            </div>
+            <div class="modal__overlay modal__overlay--success">
+                Thanks for the message! I am looking forward to speaking with you soon.
+            </div>
+            
+        </div>
+      </div>
 
     <section class="our-services "> 
         
@@ -52,10 +106,10 @@
                      From breastfeeding assistance to emotional support,
                       our experienced team ensure a smooth 
                     and healthy transition for both mother and baby.</p>
-                    <a href="" class="btn__2">Explore Now</a>
+                    <a href="#"><button class=" btn__2" onclick="toggleModal()">Explore Now</button></a>
             </div>
          
-          </section>
+        </section>
           <section class="our-services "> 
              <div class="service__col hidden">
                 <img src="assets/louis-hansel-PHasEX5wZYc-unsplash.jpg">
@@ -67,7 +121,7 @@
                      delicious, chef-prepared meals that are customized to
                       meet their dietary requirements, with plenty of
                      dairy-free, gluten-free, and other options available..</p>
-                     <a href="" class="btn__2">Learn More</a>
+                     <a href="#"><button class=" btn__2" onclick="toggleModal()">Explore Now</button></a>
             </div>
           
          </section>
@@ -83,7 +137,7 @@
                      breastfeeding obstacles and provide you with all the guidance
                       you need.</p>
             </div>
-            <a href="" class="btn__2">Learn More</a>
+            <a href="#"><button class=" btn__2" onclick="toggleModal()">Explore Now</button></a>
            
             
     </section>
@@ -101,7 +155,7 @@
          your newborn to cooking up delicious meals, and even classes for new fathers, we have everything you need to feel confident and supported. 
         Don't wait, click HERE to learn more about our amazing classes</p>
    </div>
-   <a href="" class="btn__2">Learn More</a>
+   <a href="#"><button class=" btn__2" onclick="toggleModal()">Explore Now</button></a>
   
    
 </section>
@@ -123,7 +177,7 @@
     We're here to support you and your growing family every step of
      the way!</p>
 </div>
-<a href="" class="btn__2">Learn More</a>
+<a href="#"><button class=" btn__2" onclick="toggleModal()">Explore Now</button></a>
 
 
 </section>
@@ -139,7 +193,7 @@
      massage that can help you feel rejuvenated and ready to take 
      on the day!</p>
 </div>
-<a href="" class="btn__2">Learn More</a>
+<a href="#"><button class=" btn__2" onclick="toggleModal()">Explore Now</button></a>
 
 
 </section>
@@ -154,7 +208,7 @@
     plans that are tailored to your unique body needs. 
     So, let's work together to create a plan that helps you achieve your health goals!</p>
 </div>
-<a href="" class="btn__2">Learn More</a>
+<a href="#"><button class=" btn__2" onclick="toggleModal()">Explore Now</button></a>
 
 
 </section>
@@ -169,7 +223,7 @@
      your birth 
     experience or work through some other issues, we are here to listen. </p>
 </div>
-<a href="" class="btn__2">Learn More</a>
+<a href="#"><button class=" btn__2" onclick="toggleModal()">Explore Now</button></a>
 
 
 </section>
@@ -183,7 +237,7 @@
     and your family during this special time. Whether you're a new parent or a dad looking for 
     some extra support, we've got you covered. Let us know how we can help!</p>
 </div>
-<a href="" class="btn__2">Learn More</a>
+<a href="#"><button class=" btn__2" onclick="toggleModal()">Explore Now</button></a>
 
 
 </section>
@@ -199,7 +253,7 @@
      moment to yourself with a newborn, so let us take care of your 
     little one while you take a much-needed nap and shower. You deserve it!</p>
 </div>
-<a href="" class="btn__2">Learn More</a>
+<a href="#"><button class=" btn__2" onclick="toggleModal()">Explore Now</button></a>
 
 
 </section>
@@ -216,7 +270,7 @@
       yourself and boost your confidence. 
     You deserve to feel beautiful and amazing, because you are!</p>
 </div>
-<a href="" class="btn__2">Learn More</a>
+<a href="#"><button class=" btn__2" onclick="toggleModal()">Explore Now</button></a>
 
 
 </section>
@@ -233,7 +287,7 @@
      Even though we haven't met you yet, we want you to know that we care deeply about your well-being. You're not alone, and we're here to provide you with
      the compassionate support you need during this challenging time.</p>
 </div>
-<a href="" class="btn__2">Learn More</a>
+<a href="#"><button class=" btn__2" onclick="toggleModal()">Explore Now</button></a>
 
 
 </section>
