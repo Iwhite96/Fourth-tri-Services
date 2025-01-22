@@ -1,10 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playwrite+IN:wght@100..400&display=swap");
 
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
   font-family: "Roboto", sans-serif;
+  scroll-behavior: smooth;
 }
 
 html,
@@ -593,7 +595,7 @@ h1 {
 }
 
 .layer:hover h3 {
-  bottom: 59%;
+  bottom: 65%;
   opacity: 1;
 }
 
@@ -602,13 +604,17 @@ h1 {
   opacity: 1;
 }
 
-@media (max-width: 1200) {
+
+
+@media (max-width: 768px) {
   .layer p {
-    font-size: 8px;
+    font-size: 14px;
   }
+
+
 }
 
-/* GAOL */
+/* GoaL */
 
 .goal {
   width: 100%;
@@ -887,15 +893,24 @@ h1 {
   }
 
   .price__subheader{
-    font-size: 24px;
+    font-size: 20px;
   }
+
+.member__p{
+  margin: 0 16px;
+}
 
   .price__middle--header{
     font-size: 16px;
   }
 
   .membership__h2{
-    font-size:32px;
+    font-size:24px;
+    margin: 8px;
+  }
+
+  .membership__title{
+    font-size: 36px;
   }
 }
 
@@ -942,6 +957,7 @@ h1 {
 .service__page--h1 {
   font-size: 46px;
   margin-top: 100px;
+  font-family:"Playwrite IN", serif;
 }
 
 .our-services {
@@ -953,12 +969,15 @@ h1 {
 
 .service__col {
   padding: 30px 2px;
+  margin: 0 24px;
+justify-content: center;
 }
 
 .service__col img {
-  width: 100%;
+  width: 75%;
   height: 100%;
   border-radius: 20px;
+  
 }
 
 .service__col h3 {
@@ -998,16 +1017,15 @@ h1 {
 .team__page--h1 {
   font-size: 46px;
   margin-top: 100px;
+  font-family:"Playwrite IN", serif;
 }
 
 .team__indi h3 {
-  text-align: left;
   font-size: 36px;
   padding-top: 24px;
 }
 
 .team__indi p {
-  font-size: 24px;
   line-height: 40px;
 }
 
@@ -1015,8 +1033,9 @@ h1 {
   margin-bottom: 200px;
 }
 
+
 .team1__img {
-  width: 100%;
+  width: 50%;
   height: 90%;
   border-radius: 20px;
 }
@@ -1024,8 +1043,16 @@ h1 {
 .team__p {
   color: black;
   padding: 15px 0 25px;
+  font-size: 16px;
 }
 
+.team__1{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
 
 /* Membership Page */
 
@@ -1044,15 +1071,39 @@ h1 {
 }
 
 .member-plan{
-  width: 80%;
+  width: 100%;
   margin: auto;
   padding-top: 100px;
   padding-bottom: 50px;
 }
-
 .member__col {
   padding: 30px 2px;
+  display: flex;
 }
+.member__col--left{
+  width: 48%;
+  margin-right: 16px;
+}
+
+.mem__img{
+  width:100%;
+  border-radius: 5%;
+
+}
+
+.member__page--h1 {
+  font-size: 46px;
+  margin-top: 100px;
+  font-family:"Playwrite IN", serif;
+}
+
+.member__col--right{
+  width: 48%;
+  align-items: right;
+  margin-left: 16px;
+}
+
+
 
 .member__col h3{
   font-size: 24px;
@@ -1060,5 +1111,17 @@ h1 {
 
 .member__p{
   color: black;
-  padding: 15px 0 25px
+  padding: 15px 0 25px;
+  text-align: left;
+}
+
+@media (max-width: 764px){
+  .member__page--h1{
+    font-size: 36px;
+  }
+}
+@media (max-width: 512px){
+  .member__page--h1{
+    font-size: 24px;
+  }
 }
